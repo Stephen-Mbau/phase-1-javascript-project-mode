@@ -1,3 +1,12 @@
+##Project Author : Stephen Mungai Mbau
+## Project Name: Safari Pet Shop
+## Project Description: The project is a website that deals with pets. It is designed HTML/CSS/JS frontend and it accesses data (Images) from a public API. Its a one page MVP that allows a client to view pets for sale and make an order through the click to pay button. It also allows interested parties to adopt a dog; this is where the public API has been used to load random pics of dogs through the use of the fetch API method. The website also has a review form that allows the clients to input their feedback. The feedback is printed on the page, however, interactions do not need to persist after reloading the page.
+##Public API: https://dog.ceo/api/breeds/image/random
+
+
+
+
+
 # Phase 1 Project Guidelines
 
 ## Learning Goals
