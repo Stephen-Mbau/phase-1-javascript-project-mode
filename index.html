@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pet app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Safari Pet Shop</h1>
+    <h2>Registration Form</h2>
+    <form id="add">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phonenumber">Phonenumber:</label>
+        <input type="phonenumber" id="phonenumber" name="phonenumber" required>
+        <input type="submit" value="Register">
+        <input type="reset"  value="Clear">
+    </form>
+    <h2>Wags and Whiskers</h2>
+    <div id="images">
+        <div class="image-container">
+            <img src="images/cat pic.jpeg" alt="Photo of a cute cat" class="center"> 
+            <p>Cute cat.</p>
+            <p>Price: Ksh 2,000</p>
+            <button id="button1">Click to pay</button>
+        </div>
+        <div class="image-container">
+            <img src="images/leash.jpeg" alt="accessories for your pet" class="center">
+            <p>Leash.</p>
+            <p>Price: Ksh 1,000</p>
+            <button id="button2">Click to pay</button>
+        </div>
+        <div class="image-container">
+            <img src="images/petfood.jpeg" alt="nutrition for your pet" class="center">
+            <p>Pet food.</p>
+            <p>Price: Ksh 1,500</p>
+            <button id="button3">Click to pay</button>
+        </div>
+    </div>
+    <h2>Adopt a Dog</h2>
+    <div>
+    <img id="dogImage" src="" alt="Dog Image">
+    <button id="adoptButton">Adopt Me!</button>
+    </div>
+    <h2>Review Form</h2>
+    <ul id="reviewList">
+        <li>Best pet shop ever</li>
+      </ul>
+    <form id="consumer-review">
+        <label for="review">Customer's Review:</label>
+        <textarea id="review"></textarea>
+        <button type="submit">Feedback</button>
+        <button type="reset">Clear</button>
+      </form>
+    
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
