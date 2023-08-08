@@ -22,20 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
   });
  
 function getDogImage() {
-    const dogImageElement = document.getElementById('dogImage');
+    const dogImageLoad = document.getElementById('dogImage');
     const adoptButton = document.getElementById('adoptButton');
     const url = 'https://dog.ceo/api/breeds/image/random';
       fetch(url)
         .then(response => response.json())
         .then(data => {
-          const dogImageURL = data.message;
-          dogImageElement.src = dogImageURL;
+          const dogImage = data.message;
+          dogImageLoad.src = dogImage;
         })
         .catch(error => {
           console.error('Error fetching pic', error);
         });
     function adoptDog() {
-            alert('Thank you for considering adopting this adorable dog!');
+            alert('Thank you for considering adopting this lovely dog!');
         }
 
     adoptButton.addEventListener('click', function() {
@@ -50,11 +50,11 @@ const reviewForm = document.getElementById('consumer-review');
 reviewForm.addEventListener('submit',event=>{
     event.preventDefault()
     const text =document.getElementById('review');
-    const input = text.value;
-    const node = document.createElement('li');
-    const textNode = document.createTextNode(input);
-    node.appendChild(textNode);
-    document.getElementById('reviewList').appendChild(node);
+    const textValue = text.value;
+    const addChild = document.createElement('li');
+    const textNode = document.createTextNode(textValue);
+    addChild.appendChild(textNode);
+    document.getElementById('reviewList').appendChild(addChild);
 })
 
 
